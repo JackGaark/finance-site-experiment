@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230" font-family="Newsreader, Georgia, serif" fill="#1c1c1a">
+  <title>Three shapes a term structure can take: rising, flat, and inverted</title>
+  <defs>
+    <style>
+      .ax { stroke: #dad9cb; stroke-width: 1; fill: none; }
+      .cv { stroke: #6b7a1e; stroke-width: 2; fill: none; stroke-linecap: round; }
+      .pt { fill: #6b7a1e; stroke: #fff; stroke-width: 2; }
+      .lab { font-size: 15px; }
+      .sm { font-size: 11px; fill: #7d7a71; font-family: "Source Sans 3", Helvetica, Arial, sans-serif; }
+      .note { font-size: 12px; fill: #4d4b45; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Panel 1: rising -->
+  <g transform="translate(20,20)">
+    <text class="lab" x="0" y="0">Rising</text>
+    <text class="note" x="0" y="18">The usual case. Longer money costs more.</text>
+    <path class="ax" d="M30 160 L30 40 M30 160 L200 160" />
+    <text class="sm" x="30" y="178">1</text>
+    <text class="sm" x="196" y="178" text-anchor="end">7 yrs</text>
+    <text class="sm" x="22" y="44" text-anchor="end">8%</text>
+    <text class="sm" x="22" y="160" text-anchor="end">0</text>
+    <path class="cv" d="M42 132 C 80 110, 110 86, 188 70" />
+    <circle class="pt" cx="42" cy="132" r="4.5" />
+    <circle class="pt" cx="92" cy="105" r="4.5" />
+    <circle class="pt" cx="140" cy="82" r="4.5" />
+    <circle class="pt" cx="188" cy="70" r="4.5" />
+  </g>
+
+  <!-- Panel 2: flat -->
+  <g transform="translate(260,20)">
+    <text class="lab" x="0" y="0">Flat</text>
+    <text class="note" x="0" y="18">One rate for every maturity.</text>
+    <path class="ax" d="M30 160 L30 40 M30 160 L200 160" />
+    <text class="sm" x="30" y="178">1</text>
+    <text class="sm" x="196" y="178" text-anchor="end">7 yrs</text>
+    <text class="sm" x="22" y="44" text-anchor="end">8%</text>
+    <text class="sm" x="22" y="160" text-anchor="end">0</text>
+    <path class="cv" d="M42 96 L188 96" />
+    <circle class="pt" cx="42" cy="96" r="4.5" />
+    <circle class="pt" cx="92" cy="96" r="4.5" />
+    <circle class="pt" cx="140" cy="96" r="4.5" />
+    <circle class="pt" cx="188" cy="96" r="4.5" />
+  </g>
+
+  <!-- Panel 3: inverted -->
+  <g transform="translate(500,20)">
+    <text class="lab" x="0" y="0">Inverted</text>
+    <text class="note" x="0" y="18">Short rates above long. Often a warning.</text>
+    <path class="ax" d="M30 160 L30 40 M30 160 L200 160" />
+    <text class="sm" x="30" y="178">1</text>
+    <text class="sm" x="196" y="178" text-anchor="end">7 yrs</text>
+    <text class="sm" x="22" y="44" text-anchor="end">8%</text>
+    <text class="sm" x="22" y="160" text-anchor="end">0</text>
+    <path class="cv" d="M42 62 C 80 78, 120 100, 188 108" />
+    <circle class="pt" cx="42" cy="62" r="4.5" />
+    <circle class="pt" cx="92" cy="82" r="4.5" />
+    <circle class="pt" cx="140" cy="99" r="4.5" />
+    <circle class="pt" cx="188" cy="108" r="4.5" />
+  </g>
+
+  <text class="sm" x="360" y="222" text-anchor="middle">Spot rate against maturity, each panel a snapshot at one moment</text>
+</svg>
